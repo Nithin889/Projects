@@ -24,6 +24,7 @@ public class TutorialController {
 
   @GetMapping("/tutorials")
   public String getAll(Model model, @Param("keyword") String keyword) {
+	  System.out.println("Hello");
     try {
       List<Tutorial> tutorials = new ArrayList<Tutorial>();
 
